@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit User Information</title>
+    <title>Set patient schedule</title>
     <script src="https://kit.fontawesome.com/f221ac0461.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,24 +15,24 @@
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#" style="margin-left: 20px;">DocApp</a>
+                <a class="navbar-brand" href="#">DocApp</a>
                 <a href="/userdata" style="margin-right: 30px; text-decoration: none; color: white;">Home</a>
             </div>
         </nav>
     </div>
-    <marquee width="100%" direction="left" height="100px" style="color: black;">As a Admin you Update user data.</marquee>
+    <marquee width="100%" direction="left" height="100px" style="color: black;">As a Admin you set the patient schedule for donate blood.</marquee>
     <div class="form-body">
         <div class="body-color">
-            <form action="/editInfo/<%- user._id %>" method="post">
+            <form action="/addDonorSchedule" method="post">
                 <div class="reg-Form">
-                    <h3 style="text-align: center; padding-top: 20px;"> <u>Update Data</u></h3>
-                    <input type="text" placeholder="Username" name="user_name" size="30" value="<%- user.user_name %>"> <br>
-                    <input type="text" placeholder="Phone" name="user_phone" size="30" value="<%- user.user_phone %>"> <br>
-                    <input type="email" placeholder="example@gmail.com" name="user_email" size="30" value="<%- user.user_email %>"> <br>
-                    <input type="password" placeholder="Password" name="user_password" size="30" value="<%- user.user_password %>"> <br>
-                    <input type="text" placeholder="Address" name="user_address" size="30" value="<%- user.user_address %>"> <br>
-                    <input type="text" placeholder="Doctor Name" name="doctor_name" size="30" value="<%- user.doctor_name %>"> <br>
-                    <button style="margin: 20px 115px; padding: 5px 20px;" type="Submit" class="btn btn-secondary btn-sm update-btn">Update</button>
+                    <h3 style="text-align: center; padding-top: 30px; padding-bottom: 20px;"> <u>Blood Donor Schedule</u></h3>
+                        <input type="text" placeholder="Blood id" name="b_id" size="30" value="<%- donor._id %>" hidden> <br>
+                        <input type="text" placeholder="Donor Name" name="donor_name" size="30" value="<%- donor.donor_name %>"> <br>
+                        <input type="text" placeholder="Hospital Name" name="hospital_address" size="30"> <br>
+                        <input type="date" placeholder="Date" name="date" style="width: 262px"> <br>
+                        <input type="time" placeholder="Time" name="time" style="width: 262px"> <br>
+                        
+                        <button style="margin: 15px 115px; padding: 5px 20px;" type="Submit" class="btn btn-secondary btn-sm update-btn">Submit</button>
                 </div>
             </form>
         </div>

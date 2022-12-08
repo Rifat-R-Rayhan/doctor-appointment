@@ -7,19 +7,20 @@ let donorSchema = new Schema({
         trim: true,
         // maxlength: 22
     },
-
+    donor_password:{
+        type: String,
+        required: true
+    },
     donor_phone:{
         type: String,
         required: true,
         // min: 11,
         // max: 11
-    },
-    
+    },   
     blood_group:{
         type: String,
         required: true
     },
-
     donor_address:{
         type: String,
         required: true,

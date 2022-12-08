@@ -3,7 +3,7 @@
     padding: 0;
 }
 .login{
-    margin-left: 920px;
+    margin-left: 840px;
     background-color: rgb(20, 20, 22);
     color: beige;
     border-radius: 5px;
@@ -15,17 +15,17 @@
     border-radius: 5px;
 }
 .middle-body{
-    height: 400px;
+    height: 100vh;
     width: auto;
-    background-image: url("../photo/Medical.png");
+    background-image: url("../photo/telehealth.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0px -60px;
+    /* background-position: 0px -60px; */
 }
 .footer{
     height: 31vh;
     width: auto;
-    background-color: rgb(0, 110, 255);
+    background-color: rgb(4, 179, 141);
     display: flex;
     justify-content: space-around;
 }

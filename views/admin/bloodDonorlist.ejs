@@ -13,7 +13,7 @@
     <nav class="navbar bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" style="color: white;">DocApp</a>
-            <form action="/search" class="d-flex" role="search" method="post">
+            <form action="/searchDonor" class="d-flex" role="search" method="post">
                 <input class="form-control me-2" type="search" placeholder="Search" name="name" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
@@ -26,6 +26,7 @@
         <thead>
             <tr style="text-align: center; font-size: large;">
                 <th scope="col">Name</th>
+                <th scope="col">Password</th>
                 <th scope="col">Contact</th>
                 <th scope="col">Blood Group</th>
                 <th scope="col">Address</th>
@@ -38,6 +39,7 @@
                 <% donors.forEach(function(donor){ %>
                     <tr style="text-align: center;">
                         <td><%- donor.donor_name %></td>
+                        <td><%- donor.donor_password %></td>
                         <td><%- donor.donor_phone %></td>
                         <td><%- donor.blood_group %></td>
                         <td><%- donor.donor_address %></td>

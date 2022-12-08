@@ -16,13 +16,25 @@
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">DocApp</a>
+                <a class="navbar-brand" href="#" style="margin-left: 20px;">DocApp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blood
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/bloodDonorReg">Donor</a></li>
+                            <li><a class="dropdown-item" href="/donorlogin">Schedule</a></li>
+                            <li><a class="dropdown-item" href="/bloodDonorDataForUser">Taker</a></li>
+                            </ul>
+                        </li>
+        
+                        </ul>
                         <a class="nav-link" href="/doctorlist">Doctor</a>
                         <a class="nav-link login" href="/userlogin">Login</a>
                         <a class="nav-link reg" href="/registration">Registration</a>
@@ -34,13 +46,13 @@
 
     <div class="middle-body">
         <div class="msg" style="padding: 110px 10px; color: white;">
-            <p style="text-align: center; color:black; padding-top: 5px; padding-left: 180px">Simply the way to book</p>
-            <h3 style="text-align: center; color:black; padding-top: 10px; padding-left: 180px">Doctor Appointment</h3>
-            <p>
-                "<span style="font-size: 24px;">DocApp</span> promises a hassle-free <br>
-                online doctor appointment system <br>
-                that is convenient to both doctors <br>
-                and most importantly the patients.""
+            <p style="margin: 140px 20px;">
+                Simply the way to book <br>
+                <span>Doctor Appointment</span>
+                <span style="font-size: 24px;">"DocApp"</span> promises a hassle-free <br>
+                online doctor appointment system that is convenient <br>
+                to both doctors and most importantly the patients.<br>
+                
             </p>
     
         </div>
@@ -56,10 +68,6 @@
         <div class="box services-2">
             <i class="fa-solid fa-droplet"></i>
             <h5 style="margin: 30px 45px;">BLOOD</h5>
-        </div>
-        <div class="box services-3">
-            <i class="fa-solid fa-location-crosshairs"></i>
-            <h5 style="margin: 30px 31px;">LOCATION</h5>
         </div>
         <div class="box services-4">
             <i class="fa-solid fa-user-doctor"></i>

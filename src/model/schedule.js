@@ -1,6 +1,9 @@
 let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 let scheduleSchema = new Schema({
+    p_id:{
+        type: String
+    },
     user_name:{
         type: String
     },

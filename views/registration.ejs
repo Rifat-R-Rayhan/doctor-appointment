@@ -22,31 +22,43 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        <a class="nav-link" href="#">About us</a>
-                        <a class="nav-link login" href="/login">Login</a>
-                        <a class="nav-link reg" href="/registration">Register</a>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
 
+    <div class="conatiner1">
+        <div class="left-side">
+            <div class="text" style="margin-top: 65%; text-align:center;">
+                <span>If you have already an account. Please</span>
+                <button style="margin: 20px 110px; padding: 5px 30px;" type="submit" class="btn btn-primary btn-sm"><a href="/userlogin" style="text-decoration: none; color: white;">Login</a></button>
+            </div>
+        </div>
+
     <div class="form-body">
         <div class="body-color">
             <form action="/send" method="post" autocomplete="off">
                 <div class="reg-Form">
                     <h3 style="text-align: center; padding-top: 10px;"> <u>Registration Form</u></h3>
-                    <input type="text" placeholder="Username" name="user_name" size="36" required> <br>
-                    <input type="text" placeholder="Phone" name="user_phone" size="36" required> <br>
-                    <input type="email" placeholder="example@gmail.com" name="user_email" size="36" required> <br>
-                    <input type="password" placeholder="Password" name="user_password" size="36" required> <br>
-                    <input type="text" placeholder="Address" name="user_address" size="36" required> <br>
-                    <input type="text" placeholder="Doctor Name" name="doctor_name" size="36" required> <br>
-                    <button style="margin: 15px 145px; padding: 5px 20px;" type="submit" class="btn btn-secondary btn-sm">Submit</button>
+                    <input type="text" placeholder="Username" name="user_name" size="30" required> <br>
+                    <input type="text" placeholder="Phone" name="user_phone" size="30" required> <br>
+                    <input type="email" placeholder="example@gmail.com" name="user_email" size="30" required> <br>
+                    <input type="password" placeholder="Password" name="user_password" size="30" required> <br>
+                    <input type="text" placeholder="Address" name="user_address" size="30" required> <br>
+                    <select aria-label="Default select example" name="doctor_name">
+                        <option selected disabled>Doctor Name</option>
+                    <% doctors.forEach(function(doctor){ %>
+                        <option value="doctr.doctor_name"><%- doctor.doctor_name %></option>
+                    <% }); %>
+                    </select><br>
+                    <button style="margin: 20px 110px; padding: 5px 30px; color: aliceblue;" type="submit" class="btn btn-danger btn-sm">Submit</button>
                 </div>
             </form>
         </div>
     </div>
+    </div>
+    
 
 
 

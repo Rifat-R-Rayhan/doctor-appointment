@@ -2,45 +2,34 @@
     margin: 0;
     padding: 0;
 }
-.login{
-    margin-left: 920px;
-    background-color: rgb(20, 20, 22);
-    color: beige;
-    border-radius: 5px;
+.container2{
+    height: 91vh;
+    display: flex;
 }
-.reg{
-    margin-left: 10px;
-    background-color: rgb(20, 20, 22);
-    color: beige;
-    border-radius: 5px;
+.right-side{
+    width: 30%;
+    background: linear-gradient(to right, #c6c8c9 0%, #1579bb 100%);
 }
 .form-body{
-    height: 568px;
-    width: auto;
-    background-image: url("../photo/Capture.PNG");
+    width: 70%;
+    background-image: url("../photo/reg.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    /* opacity: 0.2; */
-}
-.body-color{
-    height: 568px;
-    width: auto;
-    background-color: rgba(18, 154, 245, 0.788);
-}
-form{
-    padding-top: 5%;
 }
 .reg-Form{
-    height: 400px;
-    width: 380px;
-    background-color: rgba(0, 0, 0, 0.918);
-    color: white;
-    margin-left: 36%;
+    height: 415px;
+    width: 320px;
+    background-color: rgba(241, 102, 167, 0.986);
+    color: rgb(12, 12, 12);
+    margin: 11% 45%;
     border-radius: 10px;
 }
 .reg-Form input{
-    margin: 15px 40px;
+    margin: 10px 28px;
     outline: none;
     border-radius: 5px;
+    border: none;
+    padding: 2px 5px;
 }
 .reg-Form .gender input{
     margin: 10px 10px;
